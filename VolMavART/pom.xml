@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>VolMavGRP</groupId>
+  <artifactId>VolMavART</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>VolnayMaven</name>
+  <description>DIVIS Project</description>
+  
+  
+  
+    
+    <properties>
+        <project.java.version>1.8</project.java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+ <dependencies>
+
+   <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-testng</artifactId>
+            <version>2.19.1</version>
+            
+   </dependency>
+
+   <dependency>
+    	<groupId>org.codehaus.plexus</groupId>
+    	<artifactId>plexus-utils</artifactId>
+    	<version>1.0.4</version>
+	</dependency>
+	
+  	<dependency>  	
+  	   <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.11.0</version>
+      </dependency>
+      <dependency>				
+          <groupId>junit</groupId>								
+          <artifactId>junit</artifactId>								
+          <version>3.8.1</version>								
+          <scope>test</scope>								
+       </dependency>				
+				
+        <dependency>				
+           <groupId>org.testng</groupId>								
+           <artifactId>testng</artifactId>								
+           <version>6.14.3</version>								
+           <scope>test</scope>							  			
+       </dependency>
+	</dependencies>
+
+	<build>  
+    <plugins>
+     <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-compiler-plugin</artifactId>
+         <version>3.7.0</version>
+         <configuration>
+           <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk1.8.0_172\bin\javac.exe</executable>
+        
+           <source>${project.java.version}</source>
+           <target>${project.java.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+         </configuration>
+       </plugin>
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-resources-plugin</artifactId>
+         <version>3.0.2</version>
+         <configuration>
+             <encoding>${project.build.sourceEncoding}</encoding>          
+              <resources>
+                 <resource>
+                   <directory>${basedir}/src</directory>                               
+                 </resource>
+              </resources>
+          </configuration>
+        </plugin>
+        <plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+  		    <artifactId>maven-surefire-plugin</artifactId>
+   		    <version>2.19</version>
+            <configuration>
+            <!-- Suite testng xml file to consider for test execution -->
+            <suiteXmlFiles>
+                 <suiteXmlFile>VolTestNG.xml</suiteXmlFile>
+            </suiteXmlFiles>
+           </configuration>
+        </plugin> 
+      </plugins>
+   </build>
+  </project>
+  
+  
+ 
