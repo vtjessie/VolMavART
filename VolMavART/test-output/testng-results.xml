@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9794" started-at="2018-12-17T01:35:50Z" finished-at="2018-12-17T01:35:59Z">
+  <suite name="Default suite" duration-ms="11895" started-at="2018-12-17T23:45:09Z" finished-at="2018-12-17T23:45:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9794" started-at="2018-12-17T01:35:50Z" finished-at="2018-12-17T01:35:59Z">
+    <test name="Default test" duration-ms="11895" started-at="2018-12-17T23:45:09Z" finished-at="2018-12-17T23:45:21Z">
       <class name="volPack.VolLogVer">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:volPack.VolLogVer@1f57539]" name="beforeTest" is-config="true" duration-ms="5953" started-at="2018-12-17T01:35:50Z" finished-at="2018-12-17T01:35:56Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:volPack.VolLogVer@23d2a7e8]" name="beforeTest" is-config="true" duration-ms="7629" started-at="2018-12-17T23:45:09Z" finished-at="2018-12-17T23:45:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:volPack.VolLogVer@1f57539]" name="f" duration-ms="3801" started-at="2018-12-17T01:35:56Z" data-provider="userPassword" finished-at="2018-12-17T01:35:59Z">
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:volPack.VolLogVer@23d2a7e8]" name="f" duration-ms="4208" started-at="2018-12-17T23:45:17Z" data-provider="userPassword" finished-at="2018-12-17T23:45:21Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:volPack.VolLogVer@1f57539]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-12-17T01:35:59Z" finished-at="2018-12-17T01:35:59Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:volPack.VolLogVer@23d2a7e8]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-12-17T23:45:21Z" finished-at="2018-12-17T23:45:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

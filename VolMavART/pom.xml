@@ -84,7 +84,7 @@
             <configuration>
             <!-- Suite testng xml file to consider for test execution -->
             <suiteXmlFiles>
-                 <suiteXmlFile>VolTestNG.xml</suiteXmlFile>
+                 <suiteXmlFile>testng.xml</suiteXmlFile>
             </suiteXmlFiles>
            </configuration>
         </plugin> 
