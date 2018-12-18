@@ -24,7 +24,7 @@ public void f(String n, String s) throws InterruptedException {
 	  driver.findElement(By.id("password")).sendKeys(s);
 	  driver.findElement(By.className("login100-form-btn")).click();
 	  Thread.sleep(3000);
-	  driver.findElement(By.id("infotab")).click();
+	//  driver.findElement(By.id("infotab")).click();
 
 }
 
