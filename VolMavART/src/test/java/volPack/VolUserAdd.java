@@ -18,8 +18,8 @@ public class VolUserAdd {
 	  driver.findElement(By.id("password")).clear();
 	  driver.findElement(By.id("password")).sendKeys("Divine123");
 	  driver.findElement(By.className("login100-form-btn")).click();
-	  Thread.sleep(3000);
-//	  driver.findElement(By.id("infotab")).click();
+	  Thread.sleep(5000);
+	  driver.findElement(By.id("adminAction")).click();
   }
   @BeforeTest
   public void beforeTest() {
