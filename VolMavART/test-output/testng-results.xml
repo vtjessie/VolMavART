@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21901" started-at="2018-12-18T04:57:51Z" finished-at="2018-12-18T04:58:13Z">
+  <suite name="Default suite" duration-ms="25016" started-at="2018-12-20T03:36:10Z" finished-at="2018-12-20T03:36:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21901" started-at="2018-12-18T04:57:51Z" finished-at="2018-12-18T04:58:13Z">
+    <test name="Default test" duration-ms="25016" started-at="2018-12-20T03:36:10Z" finished-at="2018-12-20T03:36:35Z">
       <class name="volPack.VolUserAdd">
-        <test-method status="PASS" signature="userAdd()[pri:0, instance:volPack.VolUserAdd@7a9273a8]" name="userAdd" duration-ms="3618" started-at="2018-12-18T04:58:06Z" finished-at="2018-12-18T04:58:10Z">
+        <test-method status="PASS" signature="userAdd()[pri:0, instance:volPack.VolUserAdd@7a9273a8]" name="userAdd" duration-ms="6219" started-at="2018-12-20T03:36:22Z" finished-at="2018-12-20T03:36:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userAdd -->
       </class> <!-- volPack.VolUserAdd -->
       <class name="volPack.VolLogVer">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:volPack.VolLogVer@26a7b76d]" name="beforeTest" is-config="true" duration-ms="7931" started-at="2018-12-18T04:57:51Z" finished-at="2018-12-18T04:57:59Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:volPack.VolLogVer@26a7b76d]" name="beforeTest" is-config="true" duration-ms="6945" started-at="2018-12-20T03:36:10Z" finished-at="2018-12-20T03:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:volPack.VolUserAdd@7a9273a8]" name="beforeTest" is-config="true" duration-ms="6560" started-at="2018-12-18T04:57:59Z" finished-at="2018-12-18T04:58:06Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:volPack.VolUserAdd@7a9273a8]" name="beforeTest" is-config="true" duration-ms="5565" started-at="2018-12-20T03:36:17Z" finished-at="2018-12-20T03:36:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:volPack.VolLogVer@26a7b76d]" name="f" duration-ms="3712" started-at="2018-12-18T04:58:10Z" data-provider="userPassword" finished-at="2018-12-18T04:58:13Z">
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:volPack.VolLogVer@26a7b76d]" name="f" duration-ms="6218" started-at="2018-12-20T03:36:29Z" data-provider="userPassword" finished-at="2018-12-20T03:36:35Z">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:volPack.VolLogVer@26a7b76d]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-12-18T04:58:13Z" finished-at="2018-12-18T04:58:13Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:volPack.VolLogVer@26a7b76d]" name="afterTest" is-config="true" duration-ms="2" started-at="2018-12-20T03:36:35Z" finished-at="2018-12-20T03:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:volPack.VolUserAdd@7a9273a8]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-12-18T04:58:13Z" finished-at="2018-12-18T04:58:13Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:volPack.VolUserAdd@7a9273a8]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-12-20T03:36:35Z" finished-at="2018-12-20T03:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
