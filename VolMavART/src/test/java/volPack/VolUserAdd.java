@@ -20,6 +20,12 @@ public class VolUserAdd {
 	  driver.findElement(By.className("login100-form-btn")).click();
 	  Thread.sleep(5000);
 	  driver.findElement(By.id("adminAction")).click();
+	  driver.findElement(By.id("usernameAdd")).clear();
+	  driver.findElement(By.id("usernameAdd")).sendKeys("vt.jessie@gmail.com");
+	  
+	  driver.findElement(By.id("passwordAdd")).clear();
+	  driver.findElement(By.id("passwordAdd")).sendKeys("vt.jessie@gmail.com");
+	  driver.findElement(By.id("adminAdd")).click();
   }
   @BeforeTest
   public void beforeTest() {

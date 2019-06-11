@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\vt.jessie\AppData\Local\Temp\testng-eclipse--1993649299\testng-customsuite.xml</span>
+                    <span>C:\Users\vt.jessie\AppData\Local\Temp\testng-eclipse-457703603\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="volnay.Test.AddEventTest" hash-for-method="addEventVerify">addEventVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="volPack.VolLogVer" hash-for-method="f(vt.jessie@gmail.com, Divine123)">f(vt.jessie@gmail.com, Divine123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="volPack.VolUserAdd" hash-for-method="userAdd">userAdd</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="volnay.Test.LoginTest" hash-for-method="test_Home_Page_Appear_Correct(infant.derrick.gnanasusairaj@gmail.com, Gnanasusairaj123, [volnay.Test.AddEventFields@f58853c, volna...)">test_Home_Page_Appear_Correct(infant.derrick.gnanasusairaj@gmail.com, Gnanasusairaj123, [volnay.Test.AddEventFields@f58853c, volna...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,33 +131,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">volPack.VolUserAdd</span>
+              <img src="failed.png"/>
+              <span class="class-name">volnay.Test.AddEventTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userAdd">
-                  </a> <!-- userAdd -->
-                  <span class="method-name">userAdd</span>
+                  <a name="addEventVerify">
+                  </a> <!-- addEventVerify -->
+                  <span class="method-name">addEventVerify</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: addEventVerify([Parameter{index=0, type=volnay.Test.AddEventFields, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) 10/10/10,(java.lang.String) 10:10AM,(java.lang.String) infant,(java.lang.String) derrick,(java.lang.String) gnanasusairaj,(java.lang.String) @gmail,(java.lang.String) com,(java.lang.String) Gnanasusairaj123,(java.lang.String) test]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:982)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">volPack.VolLogVer</span>
+              <span class="class-name">volnay.Test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f(vt.jessie@gmail.com, Divine123)">
-                  </a> <!-- f(vt.jessie@gmail.com, Divine123) -->
-                  <span class="method-name">f</span>
-                  <span class="parameters">(vt.jessie@gmail.com, Divine123)</span>
+                  <a name="test_Home_Page_Appear_Correct(infant.derrick.gnanasusairaj@gmail.com, Gnanasusairaj123, [volnay.Test.AddEventFields@f58853c, volna...)">
+                  </a> <!-- test_Home_Page_Appear_Correct(infant.derrick.gnanasusairaj@gmail.com, Gnanasusairaj123, [volnay.Test.AddEventFields@f58853c, volna...) -->
+                  <span class="method-name">test_Home_Page_Appear_Correct</span>
+                  <span class="parameters">(infant.derrick.gnanasusairaj@gmail.com, Gnanasusairaj123, [volnay.Test.AddEventFields@f58853c, volnay.Test.AddEventFields@1224144a])</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,7 +191,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vt.jessie\AppData\Local\Temp\testng-eclipse--1993649299\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vt.jessie\AppData\Local\Temp\testng-eclipse-457703603\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -165,9 +200,15 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;volPack.VolUserAdd&quot;/&gt;
-      &lt;class name=&quot;volPack.Util&quot;/&gt;
-      &lt;class name=&quot;volPack.VolLogVer&quot;/&gt;
+      &lt;class name=&quot;volnay.Test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;volMain.Organize&quot;/&gt;
+      &lt;class name=&quot;volnay.PageFactory.AddEventPage&quot;/&gt;
+      &lt;class name=&quot;volMain.Util&quot;/&gt;
+      &lt;class name=&quot;volnay.PageFactory.EditEventPage&quot;/&gt;
+      &lt;class name=&quot;volnay.Test.AddEventTest&quot;/&gt;
+      &lt;class name=&quot;volnay.PageFactory.HomePage&quot;/&gt;
+      &lt;class name=&quot;volnay.PageFactory.LoginPage&quot;/&gt;
+      &lt;class name=&quot;volnay.Test.AddEventFields&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -181,7 +222,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (3 classes)</span>
+                <span class="test-name">Default test (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,18 +250,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userAdd')
-data.setCell(0, 2, 'volPack.VolUserAdd')
-data.setCell(0, 3, 7646);
+data.setCell(0, 1, 'test_Home_Page_Appear_Correct')
+data.setCell(0, 2, 'volnay.Test.LoginTest')
+data.setCell(0, 3, 80498);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'f')
-data.setCell(1, 2, 'volPack.VolLogVer')
-data.setCell(1, 3, 5919);
+data.setCell(1, 1, 'addEventVerify')
+data.setCell(1, 2, 'volnay.Test.AddEventTest')
+data.setCell(1, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -246,39 +287,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">volPack.VolLogVer</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">volnay.Test.AddEventTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
+                <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">volPack.VolUserAdd</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">volnay.Test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">6139 ms</span>
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">3896 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">userAdd</span>
-                <span class="method-start">11497 ms</span>
+                <span class="method-name">test_Home_Page_Appear_Correct(infant.derrick.gnanasusairaj@gmail.com, Gnanasusairaj123, [volnay.Test.AddEventFields@f58853c, volna...)</span>
+                <span class="method-start">6853 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">volPack.VolLogVer</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">f(vt.jessie@gmail.com, Divine123)</span>
-                <span class="method-start">19151 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">volnay.Test.AddEventTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">25075 ms</span>
+                <span class="method-start">87360 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">volPack.VolUserAdd</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">volnay.Test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">25075 ms</span>
+                <span class="method-start">87360 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
